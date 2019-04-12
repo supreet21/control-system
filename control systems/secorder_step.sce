@@ -1,0 +1,14 @@
+s=%s;
+l=1;
+kf=1;
+kb=1;
+k1=1;
+j=4;
+k=1;
+r=0;
+f=11;
+t=(0*s+1)/(l*j*s^2 +(k*f*l+r*j)*s+r*k*f+1);
+T = syslin('c',t);
+time = 0:0.1:40;
+y = csim('step',time,T);
+plot(y,t);
